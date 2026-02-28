@@ -1,0 +1,10 @@
+post_install() {
+  echo ""
+  echo "To enable and start the service, run:"
+  echo "  sudo systemctl enable --now diag-router"
+  echo ""
+}
+
+post_upgrade() {
+  post_install
+}

@@ -1,0 +1,22 @@
+pkgbase = qcom-diag-router-bin
+	pkgdesc = Routing of diagnostics related messages between host and various subsystems
+	pkgver = 1.0.2
+	pkgrel = 1
+	url = https://softwarecenter.qualcomm.com
+	install = diag-router.install
+	arch = aarch64
+	license = LicenseRef-Qualcomm-Proprietary
+	depends = glib2
+	depends = qrtr
+	provides = qcom-diag-router
+	provides = diag
+	conflicts = qcom-diag-router
+	conflicts = diag
+	options = !strip
+	options = !debug
+	source = https://softwarecenter.qualcomm.com/nexus/generic/software/chip/component/core-technologies.qclinux.0.0/260222/prebuilt_yocto/diag-router_15.0+really1.0.2_armv8a.tar.gz
+	source = diag-router.service
+	sha256sums = ec3f1c0986153ca9210a2e9b74b2b5fad3b6ae2e40678ed9e0fa2b89bdd579e6
+	sha256sums = SKIP
+
+pkgname = qcom-diag-router-bin
